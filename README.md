@@ -2,6 +2,8 @@
 
 This gem allows Sidekiq workers to cancel themselves at runtime. Using long-running Sidekiq jobs that perform some kind of long computation (which is also better to avoid), you might want to be able to cancel these jobs in a clean and controlled way.
 
+The gem implements the solution described in the official Sidekiq wiki: https://github.com/mperham/sidekiq/wiki/FAQ#how-do-i-cancel-a-sidekiq-job
+
 ## Usage
 
 ```ruby
